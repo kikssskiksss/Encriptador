@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encriptador</title>
+    <link rel="stylesheet" href=".//normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./imagenes/logo.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="soporte">
+            <img class="logo" src="./ALura.svg" alt="logo de alura">
+        </div>
+        
+    </header>
+
+    <main>
+
+        <div class="soporte">
+            <div class="encriptador">
+                <form class="encriptadorforma">
+                    <div class="textoparaelarea">
+                        <textarea name="texto" id="texto"  placeholder="Ingrese el texto aquí." ></textarea>
+                        <div class="textoinformacion">
+                            <div class="informacion">
+                                <img src="./exclamation.svg">
+                                <p id="advertencia">Solo letras minúsculas, sin acentos ni caracteres especiales.</p>
+                            </div>
+    
+                        </div>
+    
+                        <div class="boton">
+                            <button id="encriptador" class="botonencriptar" type="button">¡Encriptar!</button>
+                            <button id="desencriptador" class="botondesencriptar" type="button">¡Desencriptar!</button>
+                        </div>
+                    </div>
+                </form>
+    
+                <div class="resultado">
+
+                    <div class="soporteresultado">
+                        <div class="contenido_no_resuelto" id="noResuelto">
+                            <div class="imagenresultado">
+                                <img src="./Muñeco.png" alt="Imagen de muñeco">
+                            </div>
+                            <p>Ningún mensaje fue encontrado.</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                            </div>
+                
+                            <div class="contenidoresuelto" id = "resuelto">
+                                <textarea name="texto_resultado" id="textoResultado" disabled></textarea>
+                                <button id="copiar" type="button">Copiar</button>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </div>
+    
+        </div>
+    </main>
+
+    <footer>
+
+        <p class="copyright">© Creado por Luis Enrique Perez Garrido.</p>
+    </footer>
+    
+
+    <script src="./java.js"></script>
+</body>
+</html>
