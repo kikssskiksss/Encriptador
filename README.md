@@ -1,2 +1,2 @@
-# alura-git
+
 # Encriptador
